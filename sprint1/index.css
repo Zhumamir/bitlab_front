@@ -1,0 +1,29 @@
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #9a1b1b !important;
+    border-color: #9a1b1b !important;
+}
+.bg-custom {
+    background-color: #9a1b1b;
+    color: white;
+}
+.custom-div {
+    background-color: #6fceb4; /* Use your desired color code */
+    color: #000000; /* Optionally, set the text color */
+    padding: 20px;
+    display: flex;
+      flex-direction: row; /* Направление в ряд */
+      justify-content: space-between; /* Размещаем по краям */
+      align-items: center;
+}
+.custom-navbar-brand {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.custom-navbar-brand span {
+    font-weight: 200;
+}
+
+.main-block-text {
+    padding: 0 20px; /* Регулируйте отступы по желанию */
+  }
