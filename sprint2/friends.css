@@ -1,0 +1,111 @@
+body {
+    background-color: #e8eaed;
+  }
+
+  .navbar.bg-light {
+    background-color: #4f76a1 !important;
+  }
+  .navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 150px
+  }
+
+  .form-rounded {
+    border-radius: 1rem;
+    background-color: #324766;
+    color: #868685;
+    border: 0;
+    height: 35px
+  }
+  .fa-search {
+    color: #868685;
+    border: 0
+  }
+  
+  .navbar-sections {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -70px;
+    width: 150px;
+  }
+
+  .navbar-sections a {
+    color: #000063;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 5px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    background-color: #e8eaed;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 150px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .navbar-sections a:hover {
+    background-color: #dbe3eb;
+  }
+
+  .btn {
+    background-color: #e8eaed;
+    color: #000063;
+    width: 300px
+  }
+
+  .card-header a {
+    color: black; 
+    text-decoration: none;
+  }
+  .card-header {
+    background-color: white;
+    border: 0
+  }
+  .friend-photo {
+    width: 60px;
+    height: 60px; 
+  }
+  .list-unstyled a{
+    color: #000063;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 5px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #000 transparent transparent transparent;
+    margin-left: 5px;
+  }
+  .friend-recommendation {
+    padding-bottom: 10px;
+  }
+
+  .add-friend-link {
+      margin-top: 5px; 
+  }
+
+  .add-friend-link a {
+      color: #004f8f;
+  }
