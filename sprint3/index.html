@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-group {
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+        }
+        .col-md-2 {
+            margin-top: 5px;
+        }
+    </style>
+    <title>Currency Converter</title>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="amount">Введите сумму:</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="amount">
+                        <div class="input-group-append">
+                            <select class="form-control form-control-sm" id="fromCurrency" style="width:100%; height: 100%; margin-left: 20px;">
+                                <option value="KZT">KZT</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <h5>KZT</h5>
+                <span id="kztResult" class="badge badge-secondary">-</span>
+            </div>
+    
+            <div class="col-md-2">
+                <h5>USD</h5>
+                <span id="usdResult" class="badge badge-secondary">-</span>
+            </div>
+    
+            <div class="col-md-2">
+                <h5>EUR</h5>
+                <span id="eurResult" class="badge badge-secondary">-</span>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
