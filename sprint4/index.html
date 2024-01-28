@@ -16,9 +16,9 @@
       }
       .register-block {
         text-align: center;
-        text-align: center; /* Выравнивание текста по центру */
-         margin: 0 auto; /* Центрирование блока по горизонтали */
-        max-width: 500px; /* Максимальная ширина блока */
+        text-align: center; 
+         margin: 0 auto; 
+        max-width: 500px; 
       }
       .bg-custom {
         background-color: #2C8391;
@@ -31,16 +31,12 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
         <div class="container">
-          <!-- Логотип с текстом Twitter -->
           <a class="navbar-brand" href="#">Twitter</a>
-          <!-- Кнопка "Hamburger" для мобильных устройств -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Ссылки и элементы навигации -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-              <!-- Элементы навигации -->
               <li class="nav-item">
                 <a class="nav-link" href="#">Tweets</a>
               </li>
@@ -77,7 +73,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                      <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
                     </div>
                 </div>
             </form>
@@ -228,6 +224,20 @@ function visualizeData(){
     country.innerHTML = user.country;
     birthdate.innerHTML = user.birthdate;
     password.innerHTML = user.password;
+}
+
+function login() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    var user = JSON.parse(localStorage.getItem("user"));
+
+    if (user && user.email === email && user.password === password) {
+        alert('Вы успешно вошли в систему!');
+        select('profile');
+    } else {
+        alert('Неверный email или пароль!');
+    }
 }
 
     </script>
